@@ -43,9 +43,11 @@ traffic-escape/
 
 ## Submission Checklist
 
-Submission is only the following three things:
+Completed tasks:
 
-- [ ] A 10-second video of gameplay **before** your changes, showing the bug/broken behavior
-- [ ] A 10-second video of gameplay **after** your changes, showing the bug fixed and the new features working
-- [ ] The Chat/LLM used page link, with the complete chat history
+- [x] Fixed false car collisions caused by the player's starting position.
+- [x] Added a three-life system with respawning after car collisions.
+- [x] Added a moving-raft water lane that carries the player across safely.
+- [x] Added persistent high scores with a top-five leaderboard.
+- [x] Added an automatic day/night cycle with visible car headlights at night.
 
