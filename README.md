@@ -1,6 +1,6 @@
 # Traffic Escape
 
-Cross 8 lanes of oncoming traffic to reach the other side (Frogger-style).
+Cross eight lanes of traffic to reach the top of the screen. Avoid cars, and ride the moving rafts through the central water lane.
 
 ## Setup
 
@@ -18,25 +18,13 @@ python main.py
 | S / DOWN | Move back |
 | R | Restart |
 
-## Tasks to Complete
+## Gameplay Features
 
-### Task 1: Lives System
-> Give the player 3 lives. Getting hit loses one; game over at 0.
-
-
-
-### Task 2: Moving Log/Raft Lane
-> Add a safe lane where the player must hop on a moving log to cross.
-
-
-
-### Task 3: High Score Table
-> Track and display the top 5 scores across sessions (save to JSON).
-
-
-### Task 4: Day/Night Cycle
-> Every 30 seconds switch between day and night. At night, cars have headlights visible further ahead.
-
+- The player starts with three lives. Car collisions and falling into the water cost one life; the player respawns while lives remain.
+- The central water lane has horizontally moving rafts. The player must be supported by a raft to cross and is carried along while riding it.
+- The score increases during play. The top five scores are shown on screen and saved across sessions in `high_scores.json` at the project root. This file is created when a game ends or the player wins.
+- The environment switches between day and night every 30 seconds. At night, cars show headlights and beams ahead of their direction of travel.
+- Reach the top of the screen to win. The game ends when all three lives are lost.
 
 ## Folder Structure
 
@@ -49,6 +37,7 @@ traffic-escape/
 │   ├── game_engine.py
 │   ├── player.py
 │   └── traffic.py
+├── high_scores.json  # created automatically after a run ends
 └── README.md
 ```
 
@@ -56,7 +45,7 @@ traffic-escape/
 
 Submission is only the following three things:
 
-- [] A 10-second video of gameplay **before** your changes, showing the bug/broken behavior
-- [] A 10-second video of gameplay **after** your changes, showing the bug fixed and the new features working
-- [] The Chat/LLM used page link, with the complete chat history
+- [ ] A 10-second video of gameplay **before** your changes, showing the bug/broken behavior
+- [ ] A 10-second video of gameplay **after** your changes, showing the bug fixed and the new features working
+- [ ] The Chat/LLM used page link, with the complete chat history
 
